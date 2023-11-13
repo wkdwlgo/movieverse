@@ -1,0 +1,21 @@
+.searchKeyword_title {
+  padding-top: 5rem;
+}
+
+
+.movie-slider-container{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  width:100vw;
+  overflow:hidden;
+  padding: 16rem 0;
+  gap: 1.8rem;
+  margin-top:0px;
+  position:relative;
+  z-index:1;
+}
+
+
+

@@ -1,0 +1,225 @@
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 5rem 10rem; */
+  padding-top: 7rem;
+  gap: 5rem;
+  border: 1px;
+  color: white;
+}
+
+.detail__page {
+  width: 1000px;
+  /* box-shadow: 0 0 14px 4px #333333; */
+  /* border-radius: 30px; */
+  padding: 2rem 2rem;
+  /* border-top: 3px solid #fff; */
+}
+
+.detail__box {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  /* background-color: #222222; */
+}
+
+.detail__box h3 {
+  width: 100px;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.detail__info {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #333;
+}
+
+.detail__info div {
+  color: #dcdcdc;
+}
+
+.detail__box p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  padding-top: 0.6rem;
+  text-align: justify;
+}
+
+.detail__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail__header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.average {
+  font-size: 2rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+.movie__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.movie__poster {
+  object-fit: none;
+}
+
+.flex__box {
+  display: flex;
+}
+
+.genre__list {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.movie__genre {
+  align-items: center;
+}
+
+.movie__genre .genre__list > div {
+  /* background-color: #333; */
+  background-color: rgba(84, 44, 221, 0.6);
+  padding: 4px 6px;
+}
+
+.movie__staff > div {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+}
+
+.movie__staff > div > div {
+  padding: 0 0.5rem;
+}
+
+.movie__plot {
+  margin-top: 2rem;
+}
+
+.connect__movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.connect__movie h4 {
+  width: 100%;
+  text-align: left;
+  padding: 0.8rem 0.4rem;
+  
+  color: var(--main-font-color);
+  font-weight: 700;
+  
+}
+
+.connect__movie__list {
+  width: 1000px;
+  display: flex;
+}
+
+.connect__movie__list .movie_item {
+  with: 500px;
+  padding: 0 10px;
+}
+
+.comment__form {
+  width: 100%;
+  margin-top: 1.6rem;
+  margin-bottom: 1.4rem;
+  border-top: 1px solid #666666;
+  background-color: #303030;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.comment__form > input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  /* width: 100%; */
+  font-size: 14px;
+
+  margin-right: 1rem;
+  flex: 1;
+
+  color: black; /* 글씨 색상을 빨간색으로 변경 */
+}
+
+.comment__form > input:nth-child(1) {
+  width: 20%;
+}
+
+.comment__form > select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-right: 1rem;
+  flex: 1;
+  background-color: #000000;
+  appearance: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+   
+}
+
+
+
+.comment__form > select:hover {
+  background-color: #39218b
+  
+}
+
+.comment__form > select option {
+  background-color: white;
+  color: black;
+  
+}
+
+.commentForm__submitButton {
+  background-color: #ff5c5c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 1rem 1rem; /* 크기를 조정 */
+  flex-shrink: 0;
+}
+
+.commentForm__submitButton:hover {
+  background-color: #00508f;
+}
+
+.comment__show li {
+  border-bottom: 1px solid #333;
+  padding: 10px 8px;
+}
+

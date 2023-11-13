@@ -1,0 +1,62 @@
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+.spoka * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+
+:root {
+  --mypage-component-color: #eb9705;
+  --about-component-color: #097e4d;
+  --tweets-component-color: #003380;
+  
+  --main-font-color: #ffffff;
+  --main-background-color: #121212;  
+  /* (18,18,18) */
+  --main-violet-color: #452cdd;
+  --sub01-violet-color: #8371f9;
+  --sub02-violet-color: #b4a8ff;
+  /* 다크 모드 */
+  /* 색깔을 쓰고 싶으시면 이렇게 쓰면 되십니다.!! 자주쓰는 색깔 추가 팍팍 해주세요!!background-color: var(--main-background-color); */
+}
+
+/* 초기화 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: Arial, sans-serif; */
+  /* font-family: "LINESeedKR-Bd"; */
+  /* src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2"); */
+  /* font-weight: 700; */
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  color: var(--main-font-color);
+}
+*::selection {
+  background-color: #453cdd;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+
+html {
+  width: 100vw;
+  heigth: 100vh;
+}
+
+body {
+  /* background-color: skyblue; */
+  background-color: var(--main-background-color);
+  overflowY: scroll;
+  overflowX: hidden;
+  
+}
+
+h1 {
+  font-weight: bold;
+}

@@ -1,0 +1,142 @@
+/* MovieList.css */
+.movie-slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  overflow: hidden;
+  padding: 5rem 0;
+  gap: 1.8rem;
+  margin-top: -200px;
+  position: relative;
+  z-index: 1;
+}
+
+.movie-slider-container > div {
+  display: flex;
+  align-items: center;
+}
+
+.movie-slider-container h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.recom__box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+  margin-top: 6rem;
+  margin-bottom: 10rem;
+  
+}
+
+.recom__box .recom__title{
+  font-size: 3.4rem;
+  
+}
+
+.recom__box p {
+  color: var(--sub01-violet-color);
+  font-size: 1.8rem;
+  font-weight: 100;
+  margin-bottom: 1.4rem;
+  
+}
+
+.movie-list {
+  display: flex;
+  transition: transform 4s ease;
+  /* 느리면서 빨라지는 애니메이션 설정 */
+  /* animation: shake 0.1s ease-in-out;  */
+}
+
+/* 버튼 클릭 시 애니메이션 속도를 더 빠르게 변경 */
+/* .movie-list.shaking {
+  animation-duration: 4s;
+} */
+.arrow-btn {
+  /* width: 3rem;
+  height: 3rem;
+  display: block; */
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  /* transition: background-color 0.3s ease; */
+}
+
+.arrow-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: orange;
+}
+
+.prev-button {
+  padding: 9px 14px 8px 11px;
+  margin-top: -1rem;
+  margin-right: 1.4rem;
+}
+
+.next-button {
+  padding: 9px 11px 8px 14px;
+  margin-top: -1rem;
+  margin-left: 1.4rem;
+}
+
+/* .movie-list {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Add transition property */
+
+
+.slider-container {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider-box1 {
+    width: 4320px;
+    display: flex;
+    animation: slide1 40s linear infinite;
+  }
+
+  .slider-box2 {
+    width: 4320px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    animation: slide2 40s linear infinite;
+  }
+
+  .slider-card {
+    border-radius: 8px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+@keyframes slide1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+@keyframes slide2 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+

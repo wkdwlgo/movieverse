@@ -1,0 +1,78 @@
+/* 초기화 코드는 App.css */
+.movie__item {  
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  gap: 8px;
+  overflow: clip;
+  margin: 0 8px;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  height: 
+}
+
+.movie__item img {
+  transition: transform 0.4s ease;
+  width: 100%;
+  /* margin-bottom: 0.8rem; */
+  border-radius: 0.2rem;
+}
+
+.movie__item:hover img {
+  transform: scale(1.1);
+  trasition-duration: .3s;
+  /* transform: translate(0, -10px) rotate(-8deg);
+  transition-timing-function: ease-in-out; */
+}
+
+.movie__info__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  opacity: 0; /* 초기에는 숨김 */
+  transition: opacity .3s ease-in-out;
+  text-align: center;
+  width: 102%; /* 너비 조정 */
+  height: 103%; /* 높이 조정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  pointer-events: none; /* 영향 없는 영역으로 설정 */
+}
+
+.movie__item:hover .movie__info__wrapper {
+  opacity: 1; /* 호버 시 나타남 */
+}
+
+.movie__info__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: .6rem;
+}
+
+.movie__info__content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.movie__info__content .star {
+  color: red;
+}
+
+.movie__info__content button {
+  background-color: #452cdd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.5rem 1rem 0.7rem 1rem;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}

@@ -1,0 +1,171 @@
+.signup__box {
+  position: absolute;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.signup-page {
+  width: 520px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-background-color);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 6rem;
+}
+
+.signup-page .signup_logo {
+  width: 12rem;
+  margin-bottom: 3rem;
+}
+
+.signup__box .main_div_box {
+  width: calc(100vw - 520px);
+  display: flex;
+  justify-content: center;
+
+  background-image: url(../../public/sign_3D_1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.signUp__box .carousel_slider {
+  width: 100%;
+  height: 100vh;
+}
+.signUp .carousel .slider-wrapper {
+  height: 100vh;
+}
+
+.signup-form {
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.signup-form input {
+  border: none;
+}
+
+.signup-form form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signup-form h2 {
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  width: 400px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------0829 09:43 ----------*/
+
+/* .login__label {
+  display: flex;
+  flex-direction: column;
+  color: white; 
+}
+
+.login__label span {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #bcbcbc;
+} */
+
+/* 0829 09:43 -----------------------------------------
+
+
+
+/* 태그 직접 css 적용하지 않기 
+모든 파일 모든 태그에 적용되기 때문에 */
+
+.sign__input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* 너비와 패딩 설정을 고려한 크기 계산 */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: -5px;
+  margin-bottom: 16px;
+}
+
+.sign__button {
+  width: 380px;
+  height: 50px;
+  background-color: var(--main-violet-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  padding: 10px;
+}
+
+.sign__button:hover {
+  background-color: var(--sub01-violet-color);
+  cursor: pointer;
+}
+
+/* .poster {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+} */
+
+/* 슬라이더의 너비 조정 */
+.signup__box .slider-wrapper.axis-horizontal {
+  /* width: 640px; */
+  width: 100%;
+  margin-top: 20px;
+}
+
+.login_Link {
+  color: white;
+}
+.login_Link:hover {
+  text-decoration: underline;
+}
+
+
+/* ---반응형-- */
+/* @media screen and (min-width: 1440px) {
+  .signup__box .main_div_box {
+  width: calc(100vw - 800px);
+}
+  .login-page {
+    width: 800px;
+  }
+} */
+
+@media screen and (max-width: 850px) {
+  .signup__box .main_div_box {
+    width: 0;
+  }
+  .login-page {
+    width: 100vw;
+  }
+}
+
+
+.d {
+  color: #fff;
+}
